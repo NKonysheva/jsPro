@@ -54,41 +54,6 @@ a {
   margin: 1rem 2rem;
 }
 
-.btnBasket {
-  height: 60px;
-  width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 2rem;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.btnBasket:hover {
-  background-color: #2978A0;
-  -webkit-box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
-}
-
-.btnBasket:hover .title__cart {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-.btnCart {
-  height: 29px;
-  width: 32px;
-  padding-top: 5px;
-  padding-right: 2px;
-}
-
 .products {
   display: -ms-grid;
   display: grid;
@@ -128,5 +93,28 @@ a {
   color: #006476;
   font-weight: bold;
   padding: 0 0 1rem;
+}
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9EEFE1), color-stop(51%, #4830F0), to(#9EEFE1));
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gradient-button:hover {
+  background-position: right center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@ const renderProduct = (item, img = 'https://picsum.photos/seed/9/200') =>
           <img src="${img}" alt="productImg">
           <h3>${item.title}</h3>
           <p>${item.price} руб.</p>
-          <button class="by-btn">Купить</button>
+          <button class="gradient-button">Купить</button>
         </div>`;
 
 const renderProducts = list => {document.querySelector('.products')
