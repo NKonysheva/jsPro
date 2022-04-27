@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+</head>
+<body>
+<div class="green">Click Me!</div>
+<script src="script.js">
+    // 'use strict';
+  /**
+   * Variables
+   */
+// ES5
+//     var name = 'John';
+//     var age = 20;
+//
+//     console.log(name);
+
+// ES6
+//     const name = 'John';
+//     let age = 20;
+//
+//     name = 'Bob';
+//     console.log(name);
+// ES5
+    // function passTest(result) {
+    //     if (result) {
+    //       var firstName = 'John';
+    //       var yearOfBirth = 1990;
+    //     }
+
+    //     console.log(firstName + ' рожденный в ' + yearOfBirth + ' сдал тест');
+    // }
+
+    // passTest(true);
+
+// ES6
+//   function passTest(result) {
+//     let yearOfBirth;
+//     const firstName = 'John';
+//     if (result) {
+//       yearOfBirth = 1990;
+//     }
+//
+//     console.log(firstName + ' рожденный в ' + yearOfBirth + ' сдал тест');
+//   }
+//
+//   {
+//     let a = 10;
+//   }
+//     console.log(a);
+//   passTest(true);
+  /**
+   * Cycles
+   */
+  // ES5
+    // var i = 23;
+
+    // for (var i = 0; i < 5; i++) {
+    //   console.log(i)
+    // }
+    // console.log(i);
+
+  // ES6
+  // let i = 23;
+
+  // for (let i = 0; i < 5; i++) {
+  //   console.log(i)
+  // }
+  // console.log(i);
+
+  // function a() {
+  //   var b = 5;
+  //   let c = 10;
+  //   d = 20;
+  // }
+  // a();
+  // console.log(b);
+  // console.log(c);
+  // console.log(d);
+    /**
+     * Template literals
+     */
+  // ES5
+  // var firstName = 'John';
+  // var lastName = 'Smith';
+  // var yearOfBirth = 1990;
+
+  // function calcAge(year) {
+  //   return 2022 - year;
+  // }
+
+  // console.log(firstName + ' ' + lastName + ' рожден в ' + yearOfBirth + '.' + ' Ему сейчас ' + calcAge(yearOfBirth));
+
+  // ES6
+    // const firstName = 'John';
+    // const lastName = 'Smith';
+    // const yearOfBirth = 1990;
+
+    // function calcAge(year) {
+    //   return 2022 - year;
+    // }
+
+    // console.log(`${firstName} ${lastName} рожденный в ${yearOfBirth}. Ему сейчас ${calcAge(yearOfBirth)}`);
+
+// const str = `${firstName} ${lastName}`;
+//
+// console.log(str);
+// console.log(str.startsWith('J'));
+// console.log(str.endsWith('th'));
+// console.log(str.includes('n S'));
+// console.log(`${str} `.repeat(5));
+
+    /**
+     * Arrow functions
+     */
+
+    // ES6
+    // const calcAge = () => {
+    //   return 6;
+    // };
+    // const calcAge = (x) => {
+    //   return 6 - x;
+    // };
+    // const calcAge = x => 6 - x;
+
+
+    // const calcAge = (x, y = 10) => {
+    //   let b = y;
+    //     return 6 - x + b;
+    // };
+    // console.log(calcAge(5));
+
+    //ES5
+    // var box = {
+    //   color: 'green',
+    //   position: 1,
+    //   clickMe: function () {
+    //     var self = this;
+    //     document.querySelector('.green').addEventListener('click', function () {
+    //       console.log(self);
+    //       var str = 'This is a box number ' + self.position + ' and color ' + self.color;
+    //       console.log(str);
+    //     });
+    //   },
+    // };
+    // box.clickMe();
+
+    // ES6
+    // const box = {
+    //   color: 'green',
+    //   position: 1,
+    //   clickMe: function () {
+    //     document.querySelector('.green').addEventListener('click', () => {
+    //       console.log(this);
+    //       var str = `This is a box number ${this.position} and color ${this.color}`;
+    //       console.log(str);
+    //     });
+    //   },
+    // };
+    // box.clickMe();
+
+    /**
+     * Деструктуризация
+     */
+
+    // ES5
+    // var arr = ['John', 25];
+    // var name = arr[0];
+    // var age = arr[1];
+
+    // console.log(name, age);
+
+    //ES6
+    // const arr = ['John', 25];
+    // let [name, age, n] = arr;
+    // // let [name, , ,age] = arr;
+    // console.log(name, age, n);
+
+    const obj = {
+      firstName: 'John',
+      lastName: 'Snow',
+      colors: ['white', 'black'],
+    };
+    // let {firstName, lastName, colors} = obj;
+    // console.log(firstName, lastName, colors);
+
+    let {firstName: n, lastName: ln, colors: [a, b]} = obj;
+    console.log(n, ln, a, b);
+</script>
+</body>
+</html>
