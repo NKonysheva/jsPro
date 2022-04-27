@@ -5,19 +5,23 @@ const products = [
     {id: 4, title: 'Gamepad', price: 150},
 ];
 
-const getProductHTMLString = (title, price) => {
-    return `<div class="product-item">
-                <h3>${title}</h3>
-                <p>${price}</p>
-                <button class="by-btn">Добавить</button>
-              </div>`;
+const renderProduct = (item, img = 'https://picsum.photos/seed/9/200') => 
+        `<div class="product">
+          <img src="${img}" alt="productImg">
+          <h3>${item.title}</h3>
+          <p>${item.price} руб.</p>
+          <button class="by-btn">Купить</button>
+        </div>`;
+
+const renderProducts = list => {document.querySelector('.products')
+        .insertAdjacentHTML('beforeend', list.map(item => renderProduct(item)).join(''));
 };
 
-const renderProducts = (productList) => {
-  const list = productList.map((good) => getProductHTMLString(good.title, good.price));
-
-  document.querySelector('.products').innerHTML = list;
-    // console.log(list);
-}
-
 renderProducts(products);
+
+
+/*
+  Запятая между товарами отображается потому, что в HTML помещается массив, элементы
+  которого разделены запятой. Для устранения этой проблемы, можно применить метод 
+  join, который объединяет все элементы массива в строку.
+*/
