@@ -5,7 +5,7 @@ const products = [
     {id: 4, title: 'Gamepad', price: 150},
 ];
 
-const renderProduct = (item, img = 'https://picsum.photos/seed/9/200') => 
+const renderProduct = (item, img = 'https://picsum.photos/seed/random/200') => 
         `<div class="product">
           <img src="${img}" alt="productImg">
           <h3>${item.title}</h3>
