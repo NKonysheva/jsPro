@@ -1,0 +1,52 @@
+{
+  "size": [
+    {
+      "id": "S",
+      "price": 50,
+      "calorie": 20,
+      "message": "Small (50 RUB, 20 kilocalorie)"
+    },
+    {
+      "id": "L",
+      "price": 100,
+      "calorie": 40,
+      "message": "Large (100 RUB, 40 kilocalorie)"
+    }
+  ],
+  "assembling": [
+    {
+      "id": "1",
+      "price": 10,
+      "calorie": 20,
+      "message": "Cheese (+10 RUB, +20 kilocalorie)"
+    },
+    {
+      "id": "2",
+      "price": 20,
+      "calorie": 5,
+      "message": "Lettuce (+20 RUB, +5 kilocalorie)"
+    },
+    {
+      "id": "3",
+      "price": 15,
+      "calorie": 10,
+      "message": "Fries (+15 RUB, +10 kilocalorie)"
+    }
+  ],
+  "topping": [
+    {
+      "id": "1",
+      "price": 15,
+      "calorie": 0,
+      "message": "Condiments (+15 RUB, +0 kilocalorie)"
+    },
+    {
+      "id": "2",
+      "price": 20,
+      "calorie": 5,
+      "message": "Mayo (+20 RUB, +5 kilocalorie)"
+    }
+  ]
+}
+
+

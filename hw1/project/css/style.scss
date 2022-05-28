@@ -1,0 +1,91 @@
+$color1: #fafcfc;
+$color2: #ebf2f4;
+$color3: #2978A0;
+$color4: #006476;
+$color5: #4ea5d9;
+$color6: #09d0cc;
+$color7: #6a9b9b;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 15px;
+}
+body {
+	font-family: Ubuntu;
+	background-color: $color1;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	transition: all 0.3s;
+}
+.headerContent, .mainContent {
+  padding: 30px calc(50vw - 500px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.title {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: $color2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h1 {
+		margin: 1rem 2rem;
+	}
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 1rem 0 1rem 0;
+	gap: 1rem;
+	.product {
+		min-height: 100px;
+		flex-basis: 200px;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transition: all 0.5s;
+		img {
+			width: 100%;
+		}
+		h3 {
+			padding: 1rem 0;
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+			color: $color4;
+			font-weight: bold;
+			padding: 0 0 1rem;
+		}
+	}
+}
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #b5cac6 0%, #a6a5b0 51%, #959c9b 80%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(168, 167, 178, 0.1);
+  transition: .5s;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
