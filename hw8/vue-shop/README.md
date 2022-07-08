@@ -1,4 +1,4 @@
-# tutorial_online_shop
+# vue-shop
 
 ## Project setup
 ```
